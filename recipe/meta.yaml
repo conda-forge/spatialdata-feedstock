@@ -23,7 +23,7 @@ requirements:
   run:
     - anndata >=0.9.1
     - click
-    - dask-core
+    - dask-core <=2024.2.1
     - dask-image
     - fsspec <=2023.6
     - geopandas
