@@ -23,14 +23,14 @@ requirements:
   run:
     - anndata >=0.9.1
     - click
-    - dask-core <=2024.2.1
+    - dask-core >=2024.2.1
     - dask-image
     - fsspec <=2023.6
-    - geopandas
-    - multiscale-spatial-image 0.11.2
+    - geopandas >=0.14
+    - multiscale-spatial-image >=1.0.0
     - networkx
     - numpy
-    - ome-zarr >=0.7.0
+    - ome-zarr >=0.8.4
     - pandas
     - pyarrow
     - pygeos
@@ -40,7 +40,7 @@ requirements:
     - scikit-image
     - scipy
     - shapely >=2.0.1
-    - spatial-image 0.3.0
+    - spatial-image >=1.1.0
     - typing-extensions >=4.8.0
     - xarray >=2023.12.0
     - xarray-datatree
@@ -48,7 +48,6 @@ requirements:
     - xarray-spatial >=0.3.5
     - zarr
     - pooch
-    - tqdm
 
 test:
   imports:
