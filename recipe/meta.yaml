@@ -33,7 +33,6 @@ requirements:
     - ome-zarr >=0.8.4
     - pandas
     - pyarrow
-    - pygeos
     - python >=3.9
     - pytorch
     - rich
