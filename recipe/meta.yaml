@@ -26,7 +26,7 @@ requirements:
     - dask-core >=2024.4.1
     - dask-image
     - fsspec <=2023.6
-    - geopandas >= 0.14
+    - geopandas >=0.14
     - multiscale-spatial-image >=1.0.0
     - networkx
     - numpy
