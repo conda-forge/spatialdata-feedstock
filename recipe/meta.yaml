@@ -25,6 +25,7 @@ requirements:
     - click
     - dask-core >=2024.4.1
     - dask-image
+    - datashader
     - fsspec <=2023.6
     - geopandas >=0.14
     - multiscale-spatial-image >=1.0.0
@@ -33,7 +34,6 @@ requirements:
     - ome-zarr >=0.8.4
     - pandas
     - pyarrow
-    - pygeos
     - python >=3.9
     - pytorch
     - rich
@@ -47,8 +47,6 @@ requirements:
     - xarray-schema
     - xarray-spatial >=0.3.5
     - zarr
-    - pooch
-    - tqdm
 
 test:
   imports:
