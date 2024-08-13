@@ -33,6 +33,7 @@ requirements:
     - numpy
     - ome-zarr >=0.8.4
     - pandas
+    - pooch
     - pyarrow
     - python >=3.9
     - pytorch
