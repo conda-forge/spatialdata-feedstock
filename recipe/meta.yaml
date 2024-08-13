@@ -1,5 +1,5 @@
 {% set name = "spatialdata" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spatialdata-{{ version }}.tar.gz
-  sha256: 7c00958bfabea34d8cf200ccd24f0e14b7873ff84ccf37b5a6f7a1d747728558
+  sha256: 4bfa51421aab9da8318e92cfe6ec20dfdeb1c65cfa62e638c0ed787425b27452
 
 build:
   noarch: python
@@ -25,6 +25,7 @@ requirements:
     - click
     - dask-core >=2024.4.1
     - dask-image
+    - datashader
     - fsspec <=2023.6
     - geopandas >=0.14
     - multiscale-spatial-image >=1.0.0
@@ -32,8 +33,8 @@ requirements:
     - numpy
     - ome-zarr >=0.8.4
     - pandas
+    - pooch
     - pyarrow
-    - pygeos
     - python >=3.9
     - pytorch
     - rich
@@ -47,8 +48,6 @@ requirements:
     - xarray-schema
     - xarray-spatial >=0.3.5
     - zarr
-    - pooch
-    - tqdm
 
 test:
   imports:
