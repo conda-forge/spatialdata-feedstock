@@ -1,5 +1,5 @@
 {% set name = "spatialdata" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spatialdata-{{ version }}.tar.gz
-  sha256: 4bfa51421aab9da8318e92cfe6ec20dfdeb1c65cfa62e638c0ed787425b27452
+  sha256: 48a37f9d03274c0967d6e4ba2bf7b826a8d2faff06f0ee8de5db76411e0e6bed
 
 build:
   noarch: python
