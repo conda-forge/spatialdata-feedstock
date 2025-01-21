@@ -19,35 +19,35 @@ requirements:
     - hatch-vcs
     - hatchling
     - pip
-    - python >=3.9
+    - python >=3.10
   run:
     - anndata >=0.9.1
     - click
-    - dask-core >=2024.4.1
     - dask-image
+    - dask-core >=2024.4.1,<=2024.11.2
     - datashader
-    - fsspec <=2023.6
+    - fsspec
     - geopandas >=0.14
-    - multiscale-spatial-image >=1.0.0
+    - multiscale-spatial-image >=2.0.2
     - networkx
+    - numba
     - numpy
     - ome-zarr >=0.8.4
     - pandas
     - pooch
     - pyarrow
-    - python >=3.9
+    - python >=3.10
     - pytorch
     - rich
+    - shapely >=2.0.1
+    - spatial-image >=1.1.0
     - scikit-image
     - scipy
-    - shapely >=2.0.1
-    - spatial-image >=1.0.0
     - typing-extensions >=4.8.0
-    - xarray >=2023.12.0
-    - xarray-datatree
+    - xarray >=2024.10.0
     - xarray-schema
     - xarray-spatial >=0.3.5
-    - zarr
+    - zarr <3
 
 test:
   imports:
