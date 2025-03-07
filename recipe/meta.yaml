@@ -67,6 +67,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jdblischak
     - LucaMarconato
     - giovp
     - goanpeca
