@@ -31,7 +31,7 @@ requirements:
     - multiscale-spatial-image >=1.0.0
     - networkx
     - numpy
-    - ome-zarr >=0.8.4
+    - ome-zarr >=0.8.4,<0.10.3
     - pandas
     - pooch
     - pyarrow
