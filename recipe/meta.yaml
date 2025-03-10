@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -43,7 +43,7 @@ requirements:
     - shapely >=2.0.1
     - spatial-image >=1.0.0
     - typing-extensions >=4.8.0
-    - xarray >=2023.12.0
+    - xarray >=2023.12.0,<2024.10
     - xarray-datatree
     - xarray-schema
     - xarray-spatial >=0.3.5
