@@ -23,7 +23,7 @@ requirements:
   run:
     - anndata >=0.9.1
     - click
-    - dask-core >=2024.4.1
+    - dask-core >=2024.4.1,<2024.11.0
     - dask-image
     - datashader
     - fsspec <=2023.6
