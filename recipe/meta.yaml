@@ -1,6 +1,6 @@
 {% set name = "spatialdata" %}
-{% set version = "0.2.5" %}
-{% set python_min = "3.9" %}
+{% set version = "0.3.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata-{{ version }}.tar.gz
-  sha256: 4ed8f30347a524548ce54f5957383dd8165ac27ead1c02c68be322854556d17f
+  sha256: 9215dd5171ac9ac0eed01a265f43092c8bdb760f0b1e994795fa274c5c638611
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -20,16 +20,16 @@ requirements:
     - hatch-vcs
     - hatchling
     - pip
-    - python {{ python_min }}
+    - python {{ python_min }},<3.13
   run:
     - anndata >=0.9.1
     - click
     - dask-core >=2024.4.1,<2025
     - dask-image
     - datashader
-    - fsspec <=2023.6
+    - fsspec
     - geopandas >=0.14
-    - multiscale-spatial-image >=1.0.0,<2.0.0
+    - multiscale-spatial-image >=2.0.2
     - networkx
     - numba
     - numpy
@@ -37,7 +37,7 @@ requirements:
     - pandas
     - pooch
     - pyarrow
-    - python >={{ python_min }}
+    - python >={{ python_min }},<3.13
     - pytorch
     - rich
     - scikit-image
@@ -45,11 +45,10 @@ requirements:
     - shapely >=2.0.1
     - spatial-image >=1.1.0
     - typing-extensions >=4.8.0
-    - xarray >=2023.12.0,<2024.10.0
-    - xarray-datatree
+    - xarray >=2024.10.0
     - xarray-schema
     - xarray-spatial >=0.3.5
-    - zarr
+    - zarr <3
 
 test:
   imports:
