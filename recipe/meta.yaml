@@ -31,7 +31,7 @@ requirements:
     - geopandas >=0.14
     - multiscale-spatial-image >=2.0.2
     - networkx
-    - numba
+    - numba >=0.55.0
     - numpy
     - ome-zarr >=0.8.4,<0.10.3
     - pandas
@@ -48,6 +48,7 @@ requirements:
     - xarray >=2024.10.0
     - xarray-schema
     - xarray-spatial >=0.3.5
+    - xarray-dataclasses >=1.8.0
     - zarr <3
 
 test:
