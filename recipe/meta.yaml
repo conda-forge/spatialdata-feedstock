@@ -33,7 +33,7 @@ requirements:
     - networkx
     - numba >=0.55.0
     - numpy
-    - ome-zarr >=0.8.4,<0.10.3
+    - ome-zarr >=0.8.4
     - pandas
     - pooch
     - pyarrow
