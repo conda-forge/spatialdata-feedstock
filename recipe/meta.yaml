@@ -24,12 +24,12 @@ requirements:
   run:
     - anndata >=0.9.1
     - click
-    - dask-core >=2024.4.1,<=2024.11.2
+    - dask >=2024.4.1,<=2024.11.2
     - dask-image
     - datashader
     - fsspec
     - geopandas >=0.14
-    - multiscale-spatial-image >=2.0.2
+    - multiscale-spatial-image >=2.0.3
     - networkx
     - numba >=0.55.0
     - numpy
@@ -43,12 +43,11 @@ requirements:
     - scikit-image
     - scipy
     - shapely >=2.0.1
-    - spatial-image >=1.1.0
+    - spatial-image >=1.2.3
     - typing-extensions >=4.8.0
     - xarray >=2024.10.0
     - xarray-schema
     - xarray-spatial >=0.3.5
-    - xarray-dataclasses >=1.8.0
     - zarr <3
 
 test:
