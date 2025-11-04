@@ -24,7 +24,7 @@ requirements:
   run:
     - anndata >=0.9.1
     - click
-    - dask >=2024.4.1,<=2024.11.2
+    - dask >=2024.10.0,<=2024.11.2
     - dask-image
     - datashader
     - fsspec
@@ -33,7 +33,7 @@ requirements:
     - networkx
     - numba >=0.55.0
     - numpy
-    - ome-zarr >=0.8.4
+    - ome-zarr >=0.12.2
     - pandas
     - pooch
     - pyarrow
@@ -45,10 +45,11 @@ requirements:
     - shapely >=2.0.1
     - spatial-image >=1.2.3
     - typing-extensions >=4.8.0
+    - universal-pathlib >=0.2.6
     - xarray >=2024.10.0
     - xarray-schema
     - xarray-spatial >=0.3.5
-    - zarr <3
+    - zarr >=3.0.0
 
 test:
   imports:
