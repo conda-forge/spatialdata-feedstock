@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -29,7 +29,7 @@ requirements:
     - datashader
     - fsspec
     - geopandas >=0.14
-    - multiscale-spatial-image >=2.0.3
+    - multiscale-spatial-image 2.0.3
     - networkx
     - numba >=0.55.0
     - numpy
