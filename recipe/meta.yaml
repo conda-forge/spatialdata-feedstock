@@ -20,7 +20,7 @@ requirements:
     - hatch-vcs
     - hatchling
     - pip
-    - python {{ python_min }},<3.13
+    - python {{ python_min }}
   run:
     - anndata >=0.9.1
     - annsel >=0.1.2
@@ -38,7 +38,7 @@ requirements:
     - pandas
     - pooch
     - pyarrow
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }}
     - pytorch
     - rich
     - scikit-image
