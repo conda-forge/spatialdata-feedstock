@@ -23,8 +23,9 @@ requirements:
     - python {{ python_min }},<3.13
   run:
     - anndata >=0.9.1
+    - annsel >=0.1.2
     - click
-    - dask >=2024.10.0,<=2024.11.2
+    - dask >=2025.2.0,<2026.1.2
     - dask-image
     - datashader
     - fsspec
@@ -41,7 +42,7 @@ requirements:
     - pytorch
     - rich
     - scikit-image
-    - scipy
+    - scipy !=1.17.0
     - shapely >=2.0.1
     - spatial-image >=1.2.3
     - typing-extensions >=4.8.0
