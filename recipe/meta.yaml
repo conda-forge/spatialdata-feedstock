@@ -23,9 +23,11 @@ requirements:
     - python {{ python_min }},<3.13
   run:
     - anndata >=0.9.1
+    - annsel >=0.1.2
     - click
-    - dask >=2024.10.0,<=2024.11.2
+    - dask >=2025.2.0,<2026.1.2
     - dask-image
+    - distributed <2026.1.2
     - datashader
     - fsspec
     - geopandas >=0.14
@@ -40,14 +42,14 @@ requirements:
     - python >={{ python_min }},<3.13
     - pytorch
     - rich
-    - scikit-image
-    - scipy
+    - setuptools
     - shapely >=2.0.1
     - spatial-image >=1.2.3
-    - typing-extensions >=4.8.0
+    - scikit-image
+    - scipy !=1.17.0
+    - typing_extensions >=4.8.0
     - universal-pathlib >=0.2.6
     - xarray >=2024.10.0
-    - xarray-schema
     - xarray-spatial >=0.3.5
     - zarr >=3.0.0
 
