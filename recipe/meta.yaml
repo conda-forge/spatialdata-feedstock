@@ -1,5 +1,5 @@
 {% set name = "spatialdata" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata-{{ version }}.tar.gz
-  sha256: d0295feb90b16a6802f13e85780243fe7aecb838b44ba433c304805eac01d555
+  sha256: 17cfa4be157dd00d5dfc009038b2f0ba5ceaaad4fb15cf58cb8b53b7e28fc75e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -23,9 +23,11 @@ requirements:
     - python {{ python_min }},<3.13
   run:
     - anndata >=0.9.1
+    - annsel >=0.1.2
     - click
-    - dask >=2024.10.0,<=2024.11.2
+    - dask >=2025.2.0,<2026.1.2
     - dask-image
+    - distributed <2026.1.2
     - datashader
     - fsspec
     - geopandas >=0.14
@@ -40,14 +42,14 @@ requirements:
     - python >={{ python_min }},<3.13
     - pytorch
     - rich
-    - scikit-image
-    - scipy
+    - setuptools
     - shapely >=2.0.1
     - spatial-image >=1.2.3
-    - typing-extensions >=4.8.0
+    - scikit-image
+    - scipy !=1.17.0
+    - typing_extensions >=4.8.0
     - universal-pathlib >=0.2.6
     - xarray >=2024.10.0
-    - xarray-schema
     - xarray-spatial >=0.3.5
     - zarr >=3.0.0
 
