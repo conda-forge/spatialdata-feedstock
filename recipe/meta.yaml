@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -35,7 +35,7 @@ requirements:
     - networkx
     - numba >=0.55.0
     - numpy
-    - ome-zarr >=0.12.2
+    - ome-zarr >=0.12.2,<0.14.0
     - pandas
     - pooch
     - pyarrow
