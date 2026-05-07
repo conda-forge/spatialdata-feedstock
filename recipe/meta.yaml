@@ -1,5 +1,5 @@
 {% set name = "spatialdata" %}
-{% set version = "0.7.2" %}
+{% set version = "0.7.3" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata-{{ version }}.tar.gz
-  sha256: 17cfa4be157dd00d5dfc009038b2f0ba5ceaaad4fb15cf58cb8b53b7e28fc75e
+  sha256: 6054d66d00e19af96368a897faa0b369f3a25dbf9e0371f091129f8522ee6986
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - anndata >=0.9.1
     - annsel >=0.1.2
     - click
-    - dask >=2025.2.0,<2026.1.2
+    - dask >=2025.12.0,<2026.1.2
     - dask-image
     - distributed <2026.1.2
     - datashader
@@ -35,7 +35,7 @@ requirements:
     - networkx
     - numba >=0.55.0
     - numpy
-    - ome-zarr >=0.12.2,<0.14.0
+    - ome-zarr >=0.14.0
     - pandas
     - pooch
     - pyarrow
