@@ -13,14 +13,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
     - hatch-vcs
     - hatchling
     - pip
-    - python {{ python_min }},<3.13
+    - python {{ python_min }}
   run:
     - anndata >=0.9.1
     - annsel >=0.1.2
@@ -39,7 +39,7 @@ requirements:
     - pandas
     - pooch
     - pyarrow
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }}
     - pytorch
     - rich
     - setuptools
