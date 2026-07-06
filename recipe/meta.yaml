@@ -25,7 +25,7 @@ requirements:
     - anndata >=0.9.1
     - annsel >=0.1.2
     - click
-    - dask >=2026.3.0
+    - dask-core >=2026.3.0
     - dask-image
     - distributed >=2026.3.0
     - datashader
