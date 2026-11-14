@@ -1,5 +1,5 @@
 {% set name = "spatialdata" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata-{{ version }}.tar.gz
-  sha256: 14143788a1de83302f8e83a29dd723b2d4e82f5b130d840409822fbf3a778e25
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/spatialdata-{{ version }}.tar.gz
+  sha256: 30f7099d809f28a857ecbc9b29ceaa1b7e6018866dce53995e0a9da43f9f70f8
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
+    - scverse-misc >=0.1
     - anndata >=0.9.1
     - annsel >=0.1.2
     - click
@@ -46,7 +47,7 @@ requirements:
     - shapely >=2.0.1
     - spatial-image >=1.2.3
     - scikit-image
-    - scipy !=1.17.0
+    - scipy !=1.17
     - typing_extensions >=4.8.0
     - universal-pathlib >=0.2.6
     - xarray >=2024.10.0
